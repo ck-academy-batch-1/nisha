@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>forms</title>
+</head>
+
+<body class="container-fluid" >
+    <img src="ck.jpg" alt="CKacademy" height="200" width="400" class="container">
+    <h1>REGISTRATION FORM</h1>
+        <form action="userpage.php" style="background-color: rgb(128, 224, 250);" class="was-validated">
+        <div class="form-group" >
+            <div class="col-sm-3">
+            <label>Name</label>
+            <input type="text" id="na" name="name" class="form-control" placeholder="enter your name" required>
+            </div>
+        </div>
+        <label>Enetr your qualification</label> 
+        <div class="form-group-inline form-check">
+        <div class="col-sm-3">
+           <label class="form-check-label"></label>
+           <input type="checkbox" id="ck" class="form-check-input">Msc(cs)
+        </div></div>
+           <div class="form-group-inline form-check">
+                <div class="col-sm-3">
+                <label class="form-check-label"></label>
+                <input type="checkbox" id="ck" class="form-check-input">Msc-IT
+            </div></div>
+            <div class="form-group-inline form-check">
+                <div class="col-sm-3">
+                <label class="form-check-label"></label>
+                <input type="checkbox" id="ck" class="form-check-input">MCA
+            </div></div>
+            <div class="form-group-inline form-check">
+                <div class="col-sm-3">
+                <label class="form-check-label"></label>
+                <input type="checkbox" id="ck" class="form-check-input">Bsc(cs)
+            </div></div>
+            <div class="form-group-inline form-check">
+                <div class="col-sm-3">
+                <label class="form-check-label"></label>
+                <input type="checkbox" id="ck" class="form-check-input">BCA
+            </div></div>
+            <label>Passedout year</label>
+            <div class="form-group"><div class="col-sm-2">
+            <input type="date" class="form-control">
+        </div></div>
+            <br>
+            <label>Job Experience</label>
+            <div class="form-group-inline form-check">
+                <div class="col-sm-3">
+                <label class="form-check-label"></label>
+                <input type="checkbox" id="ck" class="form-check-input">fresher
+            </div></div>
+            <div class="form-group-inline form-check">
+                <div class="col-sm-3">
+                <label class="form-check-label"></label>
+                <input type="checkbox" id="ck" class="form-check-input">experienced
+            </div></div>
+            <br>
+            <h1>Course details</h1>
+            <label>select your course</label>
+            <div class="form-group form-check">
+                <label class="form-check-label"></label>
+                <input type="radio" id="c" class="form-check-input" name="course">full stack developer</div>
+            <div class="form-group form-check">
+                <label class="form-check-label"></label>
+                <input type="radio" id="c" class="form-check-input" name="course">frontend developer</div>
+            <div class="form-group form-check">
+                <label class="form-check-label"></label>
+                <input type="radio" id="c" class="form-check-input" name="course">backend developer</div>
+            <br>
+            <label>if you have any doubts cantact </label>
+            <div class="form-group"><div class="col-sm-3">
+            <input type="tel" id="te" name="num" placeholder="1234567890"class="form-control" readonly>
+        </div></div>
+        <label>CKacademy search</label>
+            <div class="form-group">
+                <div class="col-sm-3">
+                    <input type="search" id="gsearch" name="search" class="form-control">
+                </div>
+            </div>
+        <h1>Personal details</h1>
+        <div class="form-group">
+        <div class="col-sm-3">  
+        <label>name</label>
+        <input type="text" id="n" name="name" class="form-control" placeholder="enter your name">
+    </div></div>  
+    <div class="form-group">
+        <div class="col-sm-3">  
+        <label>Father name</label>
+        <input type="text" id="n" name="name" class="form-control" placeholder="enter your fathername">
+    </div></div>  
+        <div class="form-group">
+        <div class="col-sm-1">  
+        <label>Your age</label>
+        <input type="number" id="ag" name="age" min="18" max="25" class="form-control">
+        </div></div>
+        <div class="form-group">
+            <div class="col-sm-2">  
+            <label>D.O.B</label>
+            <input type="month" id="ag" name="age" class="form-control">
+            </div></div>
+        <label>Gender</label>
+        <div class="form-group form-check">
+            <label class="form-check-label"></label>
+            <input type="radio" id="g" name="gen" class="form-check-input">female</div>
+        <div class="form-group form-check">
+            <label class="form-check-label"></label>
+            <input type="radio" id="g" name="gen" class="form-check-input">male</div>    
+        <label>Email</label>
+        <div class="form-group ">
+        <div class="col-sm-3">
+        <input type="text" id="ml" name="mail" placeholder="example@gmail.com" class="form-control">
+     </div></div>
+        <label>Location</label>
+        <div class="form-group">
+            <div class="col-sm-3">
+            <select id="nat" class="form-control">
+                <option>cuddalore</option>
+                <option>trichy</option>
+                <option>selam</option>
+                <option>chennai</option>
+                <option>coimbatur</option>
+            </select>
+        </div></div>
+        <label>Marital status</label>
+        <div class="form-group form-check">
+            <label class="form-check-label"></label>
+            <input type="radio" id="g" name="gen" class="form-check-input">unmarried</div>
+        <div class="form-group form-check">
+            <label class="form-check-label"></label>
+            <input type="radio" id="g" name="gen" class="form-check-input">married</div> 
+            <label>resume</label>
+            <div class="form-group">
+                <div class="col-sm-3">
+                    <input type="file" id="fi" name="files" class="form-control" accept=".pdf"  multiple >
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="comments">any feedback</label>
+                <textarea class="form-control"rows="5" cols="8"></textarea>           
+            </div>
+            <label>how much you are interested this course</label>
+            <input type="range" min="4" max="8"><br>
+            <input type="button" value="submit" class="btn btn-primary">
+            <input type="reset" value="clear" class="btn btn-success">
+            <br><br>
+            <input type="color">
+            <input type="hidden">
+            <input type="url">
+            <input type="time">
+            <input type="week">
+            <input type="datetime-local">
+            <input type="image">
+            
+    </form>
+</body>
+</html>
